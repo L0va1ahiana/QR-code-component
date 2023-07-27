@@ -1,0 +1,110 @@
+/* font-family: outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+}
+
+.component {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    padding-bottom: 15px;
+    width: 230px;
+    height: 343px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.103);
+}
+
+/* .component img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+} */
+
+.image {
+    background: url('../images/image-qr-code.png');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    height: 60%;
+    border-radius: 10px;
+    animation: change_color 5s ease infinite;
+}
+
+/* color animation */
+@keyframes change_color {
+    0%, 100% {
+        background: transparent url('../images/image-qr-code.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    40% {
+        background: linear-gradient(rgba(48, 152, 221, 0.24), rgba(211, 87, 87, 0.336)), url('../images/image-qr-code.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background: linear-gradient(rgba(211, 87, 87, 0.336), rgba(48, 152, 221, 0.24)), url('../images/image-qr-code.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.component p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.component p:nth-of-type(1) {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+.component p:last-child {
+    font-weight: 400;
+    font-size: 13px;
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media screen and (max-height: 384px) {
+    .attribution {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
